@@ -101,7 +101,7 @@
 </plugin>
 
 
-            <plugin>
+           <plugin>
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-surefire-plugin</artifactId>
   <version>3.2.5</version>
@@ -111,9 +111,10 @@
     </suiteXmlFiles>
     <forkCount>1</forkCount>
     <reuseForks>true</reuseForks>
+    <!-- Disables Surefire's own class scanning -->
+    <scanForTestClasses>false</scanForTestClasses>
   </configuration>
 </plugin>
-
 
 
 
