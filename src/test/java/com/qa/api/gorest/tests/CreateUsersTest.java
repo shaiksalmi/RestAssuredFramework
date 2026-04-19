@@ -73,7 +73,7 @@ public class CreateUsersTest extends BaseTest {
 
 			File userFile = new File("./src/test/resources/jsons/user.json");
 			Response response = restClient.post(BASE_URL_GOREST, GOREST_USERS_ENDPOINT, userFile, null, null, AuthType.BEARER_TOKEN, ContentType.JSON);
-			AssertJUnit.assertEquals(response.jsonPath().getString("name"), "Sunny");
+			AssertJUnit.assertEquals(response.jsonPath().getString("name"), "Salma");
 			Assert.assertNotNull(response.jsonPath().getString("id"));	
 		}
 	
