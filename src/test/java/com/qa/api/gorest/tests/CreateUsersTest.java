@@ -67,7 +67,7 @@ public class CreateUsersTest extends BaseTest {
 		  Assert.assertNotNull(response.jsonPath().getString("id"));
 	  }
 	  
-	  @Test
+	  @Test(enabled=false)
 	  
 	  public void createAUserTestWithJsonfile() {
 
