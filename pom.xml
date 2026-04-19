@@ -107,7 +107,8 @@
   <version>3.2.5</version>
   <configuration>
     <suiteXmlFiles>
-      <suiteXmlFile>src/test/resources/testrunners/gorest.xml</suiteXmlFile>
+    <!-- <suiteXmlFile>src/test/resources/testrunners/gorest.xml</suiteXmlFile>-->
+    <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
     </suiteXmlFiles>
     <forkCount>1</forkCount>
     <reuseForks>true</reuseForks>
