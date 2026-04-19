@@ -18,8 +18,8 @@ import io.qameta.allure.Story;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-@Epic("Epic 100: Go Rest Get User API Feature")
-@Story("US 100: feature go rest api - get user api")
+//@Epic("Epic 100: Go Rest Get User API Feature")
+//@Story("US 100: feature go rest api - get user api")
 
 public class GetUserTest extends BaseTest{
 	
