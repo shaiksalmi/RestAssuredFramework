@@ -20,7 +20,7 @@
 
     <test name="Go Rest API Test - Create User">
         <classes>
-            <class name="com.qa.api.gorest.tests.CreateUserTest" />
+            <class name="com.qa.api.gorest.tests.CreateUsersTest" />
         </classes>
     </test>
 
