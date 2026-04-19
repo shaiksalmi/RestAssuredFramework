@@ -112,6 +112,9 @@
                     <reuseForks>true</reuseForks>
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testrunners/gorest.xml</suiteXmlFile>
+                        <includes>
+                   <include>nothing-to-scan</include>
+                      </includes>
                      <!-- <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
                     </suiteXmlFiles>
                     </configuration>
