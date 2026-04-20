@@ -12,7 +12,7 @@
 
   <properties>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  <maven.compiler.release>17</maven.compiler.release>
+  <maven.compiler.release>21</maven.compiler.release>
 </properties>
 
   
@@ -114,11 +114,10 @@
   <version>3.2.5</version>
   <configuration>
     <suiteXmlFiles>
-      <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+      <suiteXmlFile>${suiteXmlFiles}</suiteXmlFile>
     </suiteXmlFiles>
     <forkCount>1</forkCount>
     <reuseForks>true</reuseForks>
-    <dependenciesToScan>none</dependenciesToScan>
   </configuration>
 </plugin>
 
