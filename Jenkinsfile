@@ -76,20 +76,22 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/shaiksalmi/RestAssuredFramework.git'
-                    sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_sanity.xml"
+                    sh "mvn test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_sanity.xml"
                 }
             }
         }
 
-        stage('Publish sanity ChainTest Report'){
-            steps{
-                     publishHTML([allowMissing: false,
-                                  alwaysLinkToLastBuild: false,
-                                  keepAll: true,
-                                  reportDir: 'target/chaintest',
-                                  reportFiles: 'Index.html',
-                                  reportName: 'HTML API Sanity ChainTest Report',
-                                  reportTitles: ''])
+       stage('Publish sanity ChainTest Report'){
+    steps{
+        publishHTML([allowMissing: false,
+                     alwaysLinkToLastBuild: false,
+                     keepAll: true,
+                     reportDir: 'target/chaintest',
+                     reportFiles: 'Index.html',
+                     reportName: 'HTML API Sanity ChainTest Report',
+                     reportTitles: ''])
+    }
+}
             }
         }
 
