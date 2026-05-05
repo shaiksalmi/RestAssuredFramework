@@ -33,7 +33,7 @@ public class RestClient {
 	
 	
 	
-	public RequestSpecification setupRequest(String baseUrl, AuthType authType, ContentType contentType) {
+	private RequestSpecification setupRequest(String baseUrl, AuthType authType, ContentType contentType) {
 		
 		RequestSpecification request =RestAssured.given().log().all()
 		           .baseUri(baseUrl)

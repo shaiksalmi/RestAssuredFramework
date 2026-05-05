@@ -19,7 +19,8 @@ public class BaseTest {
 	
 	//************ API Base URLs**********//
 	
-	protected final static String BASE_URL_GOREST = "https://gorest.co.in/";
+	protected static String BASE_URL_GOREST;
+	
 	protected final static String BASE_URL_CONTACTS = "https://thinking-tester-contact-list.herokuapp.com";
 	protected final static String BASE_URL_REQRES = "https://reqres.in/";
 	protected final static String BASE_URL_BASIC_AUTH = "https://the-internet.herokuapp.com";
@@ -47,6 +48,7 @@ protected final static String BASE_URL_ERGAST_CIRCUIT = "http://ergast.com";
 	public void initSetup() {
 		RestAssured.filters(new AllureRestAssured());
 		
+		BASE_URL_GOREST = ConfigManager.get("baseurl.gorest").trim();
 	}
 	
 	@BeforeTest 
