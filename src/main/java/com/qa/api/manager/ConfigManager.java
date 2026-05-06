@@ -19,7 +19,7 @@ public class ConfigManager {
 		//mvn clean install -- if env is not given, then run test cases on QA env by default.
 		//env -- environmment variable(system)
 		
-		String envName = System.getProperty("env","qa");
+		String envName = System.getProperty("env","prod");
 		
 		System.out.println("running tests on env: "+ envName);
 		String fileName = "config_" + envName +".properties"; //config_qa.properties
